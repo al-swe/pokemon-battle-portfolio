@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon Battle!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="wrapper">
+        <div class="main">
+            <div class="box-left">
+                <div class="header">
+                    <div class="selector">
+                        <select name="pokemon" id="select1"></select>
+                        <h1 id="pkmn1header"></h1>
+                        <div class="info">
+                            <div class="line">
+                                <h3>HP:</h3>
+                                <h3 id="pkmnOneHP"></h3>
+                            </div>
+                            <div class="line">
+                                <h3>Attack:</h3>
+                                <h3 id="pkmnOneAtk"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="img1-box" class="wiggle1">
+                        <img src="pokeball.png" alt="pokemon1" id="pkmnOneImg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-middle">
+                <div class="vs-main">
+                    <h1>VS</h1>
+                    <button id="fightBtn" disabled>Fight!</button>
+                    <h3 id="tie" class="hide">It's a tie!</h3>
+                </div>
+
+
+            </div>
+
+            <div class="box-right">
+                <div class="header">
+                    <div class="selector">
+                        <select name="pokemon" id="select2"></select>
+                        <h1 id="pkmn2header"></h1>
+                        <div class="info">
+                            <div class="line">
+                                <h3>HP:</h3>
+                                <h3 id="pkmnTwoHP"></h3>
+                            </div>
+                            <div class="line">
+                                <h3>Attack:</h3>
+                                <h3 id="pkmnTwoAtk"></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="img2-box" class="wiggle2">
+                        <img src="pokeball.png" alt="pokemon1" id="pkmnTwoImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="small">
+            <h3>Please use a window size wider than 1135px :)</h3>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
